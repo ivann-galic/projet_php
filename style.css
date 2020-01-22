@@ -9,10 +9,8 @@
 
 body {
 	margin: 0;
-	background-color: #ebebeb;
-	background-image: url(imgs/1.png);
-	background-size: cover;
-	background-repeat: no-repeat;
+	background-image: url("imgs/background_img.jpg");
+	background-repeat: repeat;
 }
 
 /* ---------- HEADER ---------- */
@@ -63,34 +61,8 @@ header {
 	list-style: none;
 }
 
-#menuProfil:hover
-{
+.barreMenu a:hover {
 	border-color: #4285F4;
-}
-
-#menuExperience:hover
-{
-	border-color: #34a853;
-}
-
-#menuDiplomes:hover
-{
-	border-color: #fbbC05;
-}
-
-#menuLangues:hover
-{
-	border-color: #ea4335;
-}
-
-#menuCentresInteret:hover
-{
-	border-color: #4285F4;
-}
-
-#menuContact:hover
-{
-	border-color: #34a853;
 }
 
 .btn-navigation {
@@ -250,7 +222,7 @@ header {
 
 /* PROFIL */
 
-.espaceProfil {
+.espaceCarte {
 	position: absolute;
 	text-align: center;
 	top: 25%;
@@ -258,91 +230,33 @@ header {
 	height: 55%;
 }
 
-.carteProfil {
+.titreStory{
 	display: inline-block;
-	min-width: 50%;
-	max-width: 50%;
-	height: 100%;
+	width: 60%;
+	height: 10%;
+	background-color: white;
+	border-radius: 5px;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+	margin-bottom: 2%;
+	vertical-align: center;
+}
+
+.titreStory p {
+	font-family: "Roboto Medium", sans-serif;
+	font-size: 19px;
+	letter-spacing: 1px;
+}
+
+.carte {
+	display: inline-block;
+	width: 60%;
+	height: 88%;
 	background-color: white;
 	border-radius: 5px;
 	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
 }
 
-.profilSectionGauche {
-	float: left;
-	width: 45%;
-	height: 100%;
-}
 
-#photoProfil {
-	width: 50%;
-	margin-top: 25px;
-}
-
-#nomProfil {
-	font-family: "Roboto Medium", sans-serif;
-	letter-spacing: 1px;
-	font-size: 20px;
-	margin-bottom: 10px;
-}
-
-#devProfil{
-	font-family: "Roboto", sans-serif;
-	color: #424242;
-	font-size: 16px;
-	line-height: 25px;
-	letter-spacing: 1px;
-}
-
-.profilPresentation a {
-	margin-top: 25px;
-	margin-right: 14px;
-	margin-left: 14px;
-	font-size: 25px;
-	text-decoration: none;
-	color: #2c79ff;
-}
-
-.profilPresentation a:hover {
-	color: #7EADFF;
-}
-
-.profilSectionDroite {
-	float: right;
-	width: 55%;
-	height: 100%;
-}
-
-/*.profilInfos {
-	display: flex;
-	margin-top: 30px;
-	flex-direction: column;
-	text-align: left;
-	height: 50%;
-}
-
-.profilInfos p {
-	font-family: "Roboto", sans-serif;
-	font-size: 18px;
-	color: #424242;
-	letter-spacing: 1px;
-}
-
-.espaceProfilTelephone {
-	display: inline-flex;
-}
-
-.espaceProfilMail {
-	display: inline-flex;
-}
-
-.espaceProfiAdresse {
-	display: inline-flex;
-}
-
-.espaceProfiAdresse p:last-child {
-	line-height: 25px;
-}*/
 
 
 
