@@ -20,7 +20,7 @@ body {
 header {
 	min-width: 100%;
 	top: 0;
-	position: fixed;
+	position: sticky;
 	z-index: 900;
 }
 

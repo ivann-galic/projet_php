@@ -6,6 +6,7 @@
     require "Form.php";
     require "Calc.php";
 ?>
+
 <!--    --- STORY 1 ----->
     <div id="carteStory1" class="espaceCarte">
         <div class="titreStory"><p>Story 1</p></div>
@@ -32,18 +33,18 @@
 
 <!--    --- STORY 3 ----->
     <div class="espaceCarte">
-        <div class="titreStory"><p>Story 2</p></div>
+        <div class="titreStory"><p>Story 3</p></div>
         <div class="carte">
-            <form method="get">
+            <form method="post">
                 <?php
                 $myFormStory2 = new Form();
-                $myFormStory2 -> input("Chiffre");
+                $myFormStory2 -> input("chiffre", "number");
                 $myFormStory2 -> button("submit", "Soumettre la réponse");
-                if(sizeof($_GET)>0) {
-                    $nbr =  (int)($_GET['Chiffre']);
+                if(sizeof($_POST)>0) {
+                    $nbr = ($_POST['chiffre']);
                     // echo $nbr;
-                    $myCalc = new Calc();
-                    $myCalc->displayNbPremiers(10);
+                    $myCalc3 = new Calc();
+                    $myCalc3 -> affichePremiers($nbr);
                     //$nbr = new Form($myFormStory2($GET_Chiffre['Chiffre']);
                     //$myCalc -> displayNbPremiers();
                 }
@@ -59,7 +60,7 @@
             <form action = "" method= "post">
                 <?php
                 $formDate = new Form();
-                $formDate->input('seconde');
+                $formDate->input('seconde', "number");
                 $formDate->button("submit", "Soumettre la réponse");
                 $temps = $_POST['seconde'];
                 $date = new Date();
