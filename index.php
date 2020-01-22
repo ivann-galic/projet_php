@@ -79,17 +79,21 @@
         <form method= "post">
             <?php
             echo 'Entrez 3 chiffres :<br>';
-            $myFormStory3FirstNumber = new Form();
-            $myFormStory3FirstNumber -> input("Premier", "number");
-            $minNb1 = ($_POST['Premier']);
-            $myFormStory3FSecondNumber = new Form();
-            $myFormStory3FSecondNumber -> input("Second", "number");
-            $minNb2 = ($_POST['Second']);
-            $myFormStory3FTroisiemeNumber = new Form();
-            $myFormStory3FTroisiemeNumber -> input("Troisième", "number");
-            $minNb3 = ($_POST['Troisième']);
-            $myFormStory3Button = new Form();
-            $myFormStory3Button -> button("submit", "Soumettre la réponse");
+
+            $myFormStory5FirstNumber = new Form();
+            $myFormStory5FirstNumber -> input("Premier:", "number");
+            $minNb1 = ($_POST['Premier:']);
+
+            $myFormStory5FSecondNumber = new Form();
+            $myFormStory5FSecondNumber -> input("Second:", "number");
+            $minNb2 = ($_POST['Second:']);
+
+            $myFormStory5FTroisiemeNumber = new Form();
+            $myFormStory5FTroisiemeNumber -> input("Troisième:", "number");
+            $minNb3 = ($_POST['Troisième:']);
+
+            $myFormStory5Button = new Form();
+            $myFormStory5Button -> button("submit", "Soumettre la réponse");
 
 
             $minNb = new Calc();
@@ -99,6 +103,26 @@
     </div>
 </div>
 
+<!--    --- STORY 7 ----->
+<div class="espaceCarte">
+    <div class="titreStory"><p>Story 7</p></div>
+    <div class="carte">
+        <form method= "post">
+            <?php
+            echo 'Entrez 1 chiffre pour découvrir son résultat factoriel :<br>';
+
+            $myFormStory7 = new Form();
+            $myFormStory7-> input("truc", "number");
+            $inputNumber7 = ($_POST['truc']);
+            $myFormStory7Button = new Form();
+            $myFormStory7Button -> button("submit", "Soumettre la réponse");
+
+            $toFactorize = new Calc();
+            $toFactorize -> factorial($inputNumber7);
+            ?>
+        </form>
+    </div>
+</div>
 
 
 

@@ -36,5 +36,16 @@ Class Calc
         $smallerNb = min($number1, $number2, $number3);
         echo "Le plus petit nombre entre ".$number1.", ".$number2." et ".$number3." est : ".$smallerNb."";
     }
+
+    function factorial($number)
+    {
+
+        if ($number != 0) {
+            for ( $i = $number-1; $i >= 1 ; $i--){
+                $number = $number * $i;
+            }
+        }
+        echo "Le résultat est $number";
+    }
 }
 ?>
