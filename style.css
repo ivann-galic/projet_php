@@ -10,15 +10,16 @@
 body {
 	margin: 0;
 	background-color: #ebebeb;
-	background-image: url("imgs/1.png");
-	background-size: cover;
-	background-repeat: no-repeat;
+	background-image: url("imgs/1.png"), url("imgs/concrete-texture.png");
+	background-repeat: no-repeat, repeat;
+	font-family: "Roboto", sans-serif;
 }
 
 /* ---------- HEADER ---------- */
 
 header {
 	min-width: 100%;
+	top: 0;
 	position: fixed;
 	z-index: 900;
 }
@@ -222,19 +223,17 @@ header {
 	text-decoration: none;
 }
 
-/* PROFIL */
+/* STORIES */
 
 .espaceCarte {
-	position: absolute;
+
 	text-align: center;
-	top: 25%;
+	margin-bottom: 5%;
 	width: 100%;
-	height: 55%;
 }
 
 .titreStory{
 	display: inline-block;
-	position: relative;
 	width: 60%;
 	height: 10%;
 	background-color: white;
@@ -252,16 +251,20 @@ header {
 	letter-spacing: 1px;
 	line-height: 42px;
 	margin: 0;
-
 }
 
 .carte {
 	display: inline-block;
 	width: 60%;
-	height: 88%;
+	padding-top: 20px;
+	padding-bottom: 20px;
 	background-color: white;
 	border-radius: 5px;
 	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+}
+
+#carteStory1 {
+	margin-top: 10%;
 }
 
 footer {
