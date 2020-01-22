@@ -1,0 +1,355 @@
+@font-face {
+	font-family: 'Roboto', sans-serif;
+	src: url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap');
+	font-family: 'Montserrat', sans-serif;
+	src: url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+}
+
+/* ---------- BODY ---------- */
+
+body {
+	margin: 0;
+	background-color: #ebebeb;
+	background-image: url(imgs/1.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+/* ---------- HEADER ---------- */
+
+header {
+	min-width: 100%;
+	position: fixed;
+	z-index: 900;
+}
+
+/* *** MENU BAR *** */
+
+.barreMenu ul
+{
+	display: flex;
+	flex-direction: row;
+	margin: 0;
+	width: auto;
+	vertical-align: middle;
+	background-color: whitesmoke;
+	justify-content: center;
+}
+
+.barreMenu a
+{
+	outline: none;
+	margin-right: 20px;
+	margin-left: 20px;
+	text-align: center;
+	height: 60px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	text-decoration: none;
+	font-family: "Roboto", sans-serif;
+	font-size: 17px;
+	color: black;
+	letter-spacing: 1px;
+
+	border-style: solid;
+	border-color: whitesmoke;
+	border-top-style: hidden;
+	border-right-style: hidden;
+	border-left-style: hidden;
+}
+
+.barreMenu li{
+	list-style: none;
+}
+
+#menuProfil:hover
+{
+	border-color: #4285F4;
+}
+
+#menuExperience:hover
+{
+	border-color: #34a853;
+}
+
+#menuDiplomes:hover
+{
+	border-color: #fbbC05;
+}
+
+#menuLangues:hover
+{
+	border-color: #ea4335;
+}
+
+#menuCentresInteret:hover
+{
+	border-color: #4285F4;
+}
+
+#menuContact:hover
+{
+	border-color: #34a853;
+}
+
+.btn-navigation {
+	position: relative;
+	text-align: center;
+	height: 55px;
+	right: 40px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	cursor: pointer;
+	transition: transform .6s ease-in-out;
+	-webkit-transition: transform .6s ease-in-out;
+}
+
+.btn-navigation .barre {
+	width: 25px;
+	height: 2px;
+	background: black;
+	margin-top: 5px;
+	z-index: 1000;
+	transition: background .3s ease-in-out;
+	-webkit-transition: background .3s ease-in-out;
+}
+
+/* Changes the button menu color to black when it's clicked */
+.btn-navigation .barre.white{
+	background: #2c79ff;
+}
+
+
+/* *** BURGER MENU *** */
+
+.navigation {
+	position: fixed;
+	float: left;
+	top: 0;
+	left:0;
+	z-index: 1000;
+	background-color: whitesmoke;
+	min-width: 300px;
+	max-width: 300px;
+	height: 100%;
+	transition: transform .6s ease-in-out;
+	-webkit-transition: transform .6s ease-in-out;
+	transform: translateX(-100%);
+	-webkit-transform: translateX(-100%);
+}
+
+/* Displays the menu when the button menu is clicked */
+.navigation.isOpen{
+	transform: translateX(0%);
+	-webkit-transform: translateX(0%);
+}
+
+.bgmenuProfil {
+	margin-top: 25px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+#photoBgmenu {
+	width: 35%;
+}
+
+.bgmenuPresentation {
+	font-family: "Roboto", sans-serif;
+	text-align: center;
+	font-size: 17px;
+}
+
+#nom {
+	font-family: "Roboto Medium", sans-serif;
+	font-size: 19px;
+	letter-spacing: 1px;
+}
+
+#dev {
+	line-height: 25px;
+}
+.bgmenuPresentation p {
+	margin-bottom: 8px;
+	margin-top: 8px;
+}
+
+.bgmenuPresentation a {
+	display: inline-block;
+	color: #2c79ff;
+	font-size: 25px;
+	margin: 4px 10px;
+}
+
+.bgmenuPresentation a:hover {
+	color: #7EADFF;
+}
+
+.bgmenuSectionLiens {
+	margin-top: 40px;
+}
+
+.bgmenuSectionLiens ul{
+	list-style: none;
+	padding: 0;
+}
+
+.bgmenuSectionLiens li {
+	font-size: 17px;
+	padding-left: 40px;
+	margin-top: 3px;
+}
+
+.bgmenuSectionLiens p {
+	display: inline-block;
+	margin-top: 3px;
+	font-size: 17px;
+	line-height: 40px;
+}
+.bgmenuSectionLiens a {
+	display: inline-block;
+	line-height: 40px;
+	font-family: "Roboto Medium", sans-serif;
+	color: #000000;
+	text-decoration: none;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+.bgmenuSectionLiens a:hover{
+	color: #546e7a;
+}
+
+.btnTelecharger {
+	background-color: #546e7a;
+	min-width: 55%;
+	min-height: 44px;
+	text-align: center;
+	margin-left: 40px;
+	margin-top: 40px;
+	border-radius: 4px;
+}
+
+.btnTelecharger:hover {
+	background-color: #819ca9;
+}
+
+.btnTelecharger p {
+	display: inline-block;
+	margin: 0 2px;
+	font-family: "Roboto", sans-serif;
+	color: #fff;
+	font-size: 16px;
+}
+
+.btnTelecharger a{
+	text-decoration: none;
+}
+
+/* PROFIL */
+
+.espaceProfil {
+	position: absolute;
+	text-align: center;
+	top: 25%;
+	width: 100%;
+	height: 55%;
+}
+
+.carteProfil {
+	display: inline-block;
+	min-width: 50%;
+	max-width: 50%;
+	height: 100%;
+	background-color: white;
+	border-radius: 5px;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+}
+
+.profilSectionGauche {
+	float: left;
+	width: 45%;
+	height: 100%;
+}
+
+#photoProfil {
+	width: 50%;
+	margin-top: 25px;
+}
+
+#nomProfil {
+	font-family: "Roboto Medium", sans-serif;
+	letter-spacing: 1px;
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+#devProfil{
+	font-family: "Roboto", sans-serif;
+	color: #424242;
+	font-size: 16px;
+	line-height: 25px;
+	letter-spacing: 1px;
+}
+
+.profilPresentation a {
+	margin-top: 25px;
+	margin-right: 14px;
+	margin-left: 14px;
+	font-size: 25px;
+	text-decoration: none;
+	color: #2c79ff;
+}
+
+.profilPresentation a:hover {
+	color: #7EADFF;
+}
+
+.profilSectionDroite {
+	float: right;
+	width: 55%;
+	height: 100%;
+}
+
+/*.profilInfos {
+	display: flex;
+	margin-top: 30px;
+	flex-direction: column;
+	text-align: left;
+	height: 50%;
+}
+
+.profilInfos p {
+	font-family: "Roboto", sans-serif;
+	font-size: 18px;
+	color: #424242;
+	letter-spacing: 1px;
+}
+
+.espaceProfilTelephone {
+	display: inline-flex;
+}
+
+.espaceProfilMail {
+	display: inline-flex;
+}
+
+.espaceProfiAdresse {
+	display: inline-flex;
+}
+
+.espaceProfiAdresse p:last-child {
+	line-height: 25px;
+}*/
+
+
+
+
+
+
+
+
+
+
