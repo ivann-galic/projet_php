@@ -57,16 +57,19 @@
     <div class="espaceCarte">
         <div class="titreStory"><p>Story 4</p></div>
         <div class="carte">
-            <form action = "" method= "post">
+            <form method= "post">
                 <?php
                 $formDate = new Form();
-                $formDate->input('seconde', "number");
+                $formDate->input('secondes', "text");
                 $formDate->button("submit", "Soumettre la réponse");
-                $temps = $_POST['seconde'];
-                $date = new Date();
-                $date->getDateNow($temps);
-                echo $date;
+
+                if(sizeof($_POST)>0) {
+                    $temps = $_POST['secondes'];
+                    $date = new Date();
+                    $date->getDateNow($temps);
+                }
                 ?>
+            </form>
         </div>
     </div>
 

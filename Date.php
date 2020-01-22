@@ -6,11 +6,14 @@ class Date {
 
     public function getDateNow($dateUser)
     {
-        $numberofsecs = time();
-        echo time();
-        echo $numberofsecs;
-        $result = $numberofsecs - $dateUser;
-        echo date('Y/m/d H:i:s', $result);
+        try{
+            $dateNow = time();
+            $result = $dateNow - $dateUser;
+            echo "L'evenement a eu lieu le ". date('d/m/Y', $result);
+        }catch(Exception $e){
+        echo "Erreur ! Entrez un nombre de secondes";
+    }
+
     }
 
 
