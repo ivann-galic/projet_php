@@ -4,6 +4,9 @@
     require "Backlog.php";
     require "Date.php";
     require "Formulaire.php";
+    require "Calc.php";
+// --- STORY 1 --- //
+
 echo '<div class="espaceCarte">
             <div class="titreStory"><p>Story 1</p></div>
             <div class="carte">';
@@ -28,6 +31,7 @@ $members = new Backlog();
     echo '</div>
 	</div>';
 
+// --- STORY 2 --- //
     //----------------------Story 4------------------------//
     echo '<div class="espaceCarte">
             <div class="titreStory"><p>Story 4</p></div>
@@ -37,6 +41,27 @@ $members = new Backlog();
     $formDate->getInputTypeText('age');
     $formDate->displayButton();
 
+echo '<div class="espaceCarte">
+                <div class="titreStory"><p>Story 1</p></div>
+                <div class="carte">';
+
+echo '<form method="post">';
+
+$myForm = new Form();
+$myForm -> input("Entrez un chiffre");
+$myForm -> button("submit", "Soumettre la réponse");
+
+if(sizeof($_POST)>0) {
+    $nbr = new Form($_POST['Chiffre']);
+}
+
+$myCalc = new Calc();
+$myCalc -> displayNbPremiers($myCalc);
+echo '</form>';
+
+
+echo '</div>
+        </div>';
 
     echo '</div>
 	</div>';
