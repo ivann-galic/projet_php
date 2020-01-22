@@ -28,10 +28,9 @@ $members = new Backlog();
 
 
 
-    echo '</body>
-<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-	<script src="js/app.js"></script>
-</html>'
+    echo '</body>';
+
+    include "footer.php";
 
 
 ?>

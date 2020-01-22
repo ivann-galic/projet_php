@@ -6,6 +6,8 @@ echo '<!DOCTYPE html>
 	<meta charset="utf-8" />
 	<link rel="stylesheet" type="text/css" href="style.css"/>
 	<script src="https://kit.fontawesome.com/aa1f9c66ba.js" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+	<script src="js/app.js"></script>
 	<title>CV IVANN GALIC</title>
 </head>
 

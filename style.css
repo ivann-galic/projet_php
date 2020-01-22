@@ -9,8 +9,10 @@
 
 body {
 	margin: 0;
-	background-image: url("imgs/background_img.jpg");
-	background-repeat: repeat;
+	background-color: #ebebeb;
+	background-image: url("imgs/1.png");
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 /* ---------- HEADER ---------- */
@@ -30,7 +32,7 @@ header {
 	margin: 0;
 	width: auto;
 	vertical-align: middle;
-	background-color: whitesmoke;
+	background-color: white;
 	justify-content: center;
 }
 
@@ -51,7 +53,7 @@ header {
 	letter-spacing: 1px;
 
 	border-style: solid;
-	border-color: whitesmoke;
+	border-color: white;
 	border-top-style: hidden;
 	border-right-style: hidden;
 	border-left-style: hidden;
@@ -232,6 +234,7 @@ header {
 
 .titreStory{
 	display: inline-block;
+	position: relative;
 	width: 60%;
 	height: 10%;
 	background-color: white;
@@ -239,12 +242,17 @@ header {
 	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
 	margin-bottom: 2%;
 	vertical-align: center;
+
 }
 
 .titreStory p {
+	text-align: center;
 	font-family: "Roboto Medium", sans-serif;
 	font-size: 19px;
 	letter-spacing: 1px;
+	line-height: 42px;
+	margin: 0;
+
 }
 
 .carte {
@@ -256,14 +264,17 @@ header {
 	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
 }
 
+footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: white;
+	color: black;
+	text-align: center;
+}
 
-
-
-
-
-
-
-
-
-
-
+.footerImg {
+	height: 40px;
+	margin: 5px 0;
+}
