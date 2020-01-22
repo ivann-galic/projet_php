@@ -34,7 +34,8 @@ Class Calc
 
     function smallerNumber($number1, $number2, $number3) {
         $smallerNb = min($number1, $number2, $number3);
-        echo "Le plus petit nombre entre ".$number1.", ".$number2." et ".$number3." est : ".$smallerNb."";
+
+        return $smallerNb;
     }
 
     function factorial($number)
@@ -45,7 +46,25 @@ Class Calc
                 $number = $number * $i;
             }
         }
-        echo "Le résultat est $number";
+        return $number;
     }
+
+    function numberToBinary($number) {
+
+        $remains = array();
+
+        while($number != 0)
+        {
+            $remains[] = $number%2;
+            $number = intval($number/2);
+        }
+        $remains = array_reverse($remains);
+        $bin = '';
+        foreach ( $remains as $num )
+            $bin .= $num;
+
+        return $bin;
+        }
+
 }
 ?>

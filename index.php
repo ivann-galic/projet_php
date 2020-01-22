@@ -97,7 +97,9 @@
 
 
             $minNb = new Calc();
-            $minNb -> smallerNumber($minNb1, $minNb2, $minNb3);
+            $result5 = $minNb -> smallerNumber($minNb1, $minNb2, $minNb3);
+
+            echo "Le plus petit nombre est: $result5"
             ?>
         </form>
     </div>
@@ -112,13 +114,38 @@
             echo 'Entrez 1 chiffre pour découvrir son résultat factoriel :<br>';
 
             $myFormStory7 = new Form();
-            $myFormStory7-> input("truc", "number");
-            $inputNumber7 = ($_POST['truc']);
+            $myFormStory7-> input("chiffre:", "number");
+            $inputNumber7 = ($_POST['chiffre:']);
             $myFormStory7Button = new Form();
             $myFormStory7Button -> button("submit", "Soumettre la réponse");
 
             $toFactorize = new Calc();
-            $toFactorize -> factorial($inputNumber7);
+            $result7 = $toFactorize -> factorial($inputNumber7);
+
+            echo "Le résultat factiel est : $result7"
+            ?>
+        </form>
+    </div>
+</div>
+
+<!--    --- STORY 9 ----->
+<div class="espaceCarte">
+    <div class="titreStory"><p>Story 9</p></div>
+    <div class="carte">
+        <form method= "post">
+            <?php
+            echo 'Entrez 1 chiffre pour le convertir en binaire :<br>';
+
+            $myFormStory9 = new Form();
+            $myFormStory9-> input("chiffre:", "number");
+            $inputNumber9 = ($_POST['chiffre:']);
+            $myFormStory9Button = new Form();
+            $myFormStory9Button -> button("submit", "Soumettre la réponse");
+
+            $toBinary = new Calc();
+            $result9 = $toBinary -> numberToBinary($inputNumber9);
+
+            echo "La conversion en binaire est : $result9"
             ?>
         </form>
     </div>
