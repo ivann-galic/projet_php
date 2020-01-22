@@ -1,18 +1,18 @@
 <?php
 
     include "header.php";
-    require "Backlog.php";
+    require "StoriesAndMembers.php";
 
 
 echo '<div class="espaceCarte">
             <div class="titreStory"><p>Story 1</p></div>
             <div class="carte">';
 
-$members = new Backlog();
+$members = new StoriesAndMembers();
     echo $members -> displayMembers("Antoine", "Boris", "Ivann");
     echo $members -> displayStories(1, 16);
 
-    $stories = new backlog();
+    $stories = new StoriesAndMembers();
     $listFinishedStories = array();
     $listPendingStories = array();
     array_push($listFinishedStories, "story 1");

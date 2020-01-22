@@ -1,6 +1,6 @@
 <?php
 
-Class Backlog
+Class StoriesAndMembers
 {
 
     public function displayMembers($name1, $name2, $name3){
