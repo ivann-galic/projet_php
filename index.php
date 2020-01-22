@@ -1,14 +1,17 @@
 <?php
 
     include "header.php";
-    require "StoriesAndMembers.php";
-
-
+    require "Backlog.php";
+    require "Date.php";
+    require "Formulaire.php";
 echo '<div class="espaceCarte">
             <div class="titreStory"><p>Story 1</p></div>
             <div class="carte">';
 
-$members = new StoriesAndMembers();
+$date = new Date ();
+$date->getDateNow();
+
+$members = new Backlog();
     echo $members -> displayMembers("Antoine", "Boris", "Ivann");
     echo $members -> displayStories(1, 16);
 
@@ -25,10 +28,20 @@ $members = new StoriesAndMembers();
     echo '</div>
 	</div>';
 
+    //----------------------Story 4------------------------//
+    echo '<div class="espaceCarte">
+            <div class="titreStory"><p>Story 4</p></div>
+            <div class="carte">';
+    <form action = "" method= "post">
+    $formDate = new Formulaire();
+    $formDate->getInputTypeText('age');
+    $formDate->displayButton();
 
 
-
+    echo '</div>
+	</div>';
     echo '</body>';
+
 
     include "footer.php";
 
