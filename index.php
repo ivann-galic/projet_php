@@ -1,16 +1,18 @@
+
 <?php
 
     include "header.php";
+    include "footer.php";
     require "StoriesAndMembers.php";
     require "Date.php";
     require "Form.php";
     require "Calc.php";
 // --- STORY 1 --- //
-
-echo '<div class="espaceCarte">
+?>
+            <div class="espaceCarte">
             <div class="titreStory"><p>Story 1</p></div>
             <div class="carte">';
-
+<?php
 $date = new Date ();
 $date->getDateNow();
 
@@ -27,51 +29,54 @@ $members = new StoriesAndMembers();
     array_push($listPendingStories, "story 2", "story 3", "story 4", "story 5", "story 6", "story 7", "story 8",
         "story 9", "story 10", "story 11", "story 12", "story 13", "story 14", "story 15", "story 16");
     $stories -> displayPendingStories($listPendingStories);
-
-    echo '</div>
+    ?>
+    '</div>
 	</div>';
 
     // --- STORY 2 --- //
-    echo '<div class="espaceCarte">
+   <div class="espaceCarte">
                 <div class="titreStory"><p>Story 2</p></div>
-                <div class="carte">';
+                <div class="carte">
 
-    echo '<form method="post">';
-
+    <form method="get">
+    <?php
     $myFormStory2 = new Form();
-    $myFormStory2 -> input("Entrez un chiffre");
+    $myFormStory2 -> input("Chiffre");
     $myFormStory2 -> button("submit", "Soumettre la réponse");
 
-    if(sizeof($_POST)>0) {
-        $nbr = new Form($_POST['Chiffre']);
+   if(sizeof($_GET)>0) {
+       $nbr =  (int)($_GET['Chiffre']);
+      // echo $nbr;
+       $myCalc = new Calc();
+       $myCalc->displayNbPremiers(10);
+
+        //$nbr = new Form($myFormStory2($GET_Chiffre['Chiffre']);
+        //$myCalc -> displayNbPremiers();
+
     }
-
-    $myCalc = new Calc();
-    $myCalc -> displayNbPremiers($myCalc);
-    echo '</form>';
-
-
-    echo '</div>
-            </div>';
+   ?>
+    </form>
+                </div>
+   </div>
 
 
     //----------------------Story 4------------------------//
-    echo '<div class="espaceCarte">
+    <div class="espaceCarte">
             <div class="titreStory"><p>Story 4</p></div>
-            <div class="carte">';
-    echo '<form action = "" method= "post">';
+            <div class="carte">
+    <form action = "" method= "post">
+<?php
     $formDate = new Form();
     $formDate->getInputTypeText('age');
     $formDate->displayButton();
-
-
-
-    echo '</div>
-	</div>';
-    echo '</body>';
-
-
-    include "footer.php";
-
-
 ?>
+
+
+    </div>
+	</div>
+    </body>
+
+
+
+
+

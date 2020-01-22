@@ -1,6 +1,19 @@
 <?php
 Class Calc
 {
+
+    private $n;
+
+    /**
+     * Calc constructor.
+     * @param $n
+     */
+    public function __construct($n)
+    {
+        $this->n = $n;
+    }
+
+
     function displayNbPremiers($n)
     {
         echo "Les nombres premiers entre 0 et " . $n . " sont : ";
