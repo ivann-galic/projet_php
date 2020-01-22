@@ -44,9 +44,8 @@
                     $nbr = ($_POST['chiffre']);
                     // echo $nbr;
                     $myCalc3 = new Calc();
-                    $myCalc3 -> affichePremiers($nbr);
-                    //$nbr = new Form($myFormStory2($GET_Chiffre['Chiffre']);
-                    //$myCalc -> displayNbPremiers();
+                    $myCalc3 -> displayPrimeNumbers($nbr);
+
                 }
                 ?>
             </form>
@@ -73,6 +72,32 @@
         </div>
     </div>
 
+<!--    --- STORY 5 ----->
+<div class="espaceCarte">
+    <div class="titreStory"><p>Story 5</p></div>
+    <div class="carte">
+        <form method= "post">
+            <?php
+            echo 'Entrez 3 chiffres :<br>';
+            $myFormStory3FirstNumber = new Form();
+            $myFormStory3FirstNumber -> input("Premier", "number");
+            $minNb1 = ($_POST['Premier']);
+            $myFormStory3FSecondNumber = new Form();
+            $myFormStory3FSecondNumber -> input("Second", "number");
+            $minNb2 = ($_POST['Second']);
+            $myFormStory3FTroisiemeNumber = new Form();
+            $myFormStory3FTroisiemeNumber -> input("Troisième", "number");
+            $minNb3 = ($_POST['Troisième']);
+            $myFormStory3Button = new Form();
+            $myFormStory3Button -> button("submit", "Soumettre la réponse");
+
+
+            $minNb = new Calc();
+            $minNb -> smallerNumber($minNb1, $minNb2, $minNb3);
+            ?>
+        </form>
+    </div>
+</div>
 
 
 

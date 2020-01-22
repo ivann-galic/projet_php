@@ -2,7 +2,7 @@
 Class Calc
 {
 
-    function affichePremiers($n){
+    function displayPrimeNumbers($n){
         echo "Les nombres premiers entre 0 et ".$n." sont : ";
         $negative = false;
         if($n<0){
@@ -32,5 +32,9 @@ Class Calc
         }
     }
 
+    function smallerNumber($number1, $number2, $number3) {
+        $smallerNb = min($number1, $number2, $number3);
+        echo "Le plus petit nombre entre ".$number1.", ".$number2." et ".$number3." est : ".$smallerNb."";
+    }
 }
 ?>
