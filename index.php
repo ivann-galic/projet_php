@@ -1,9 +1,9 @@
 <?php
 
     include "header.php";
-    require "Backlog.php";
+    require "StoriesAndMembers.php";
     require "Date.php";
-    require "Formulaire.php";
+    require "Form.php";
     require "Calc.php";
 // --- STORY 1 --- //
 
@@ -14,7 +14,7 @@ echo '<div class="espaceCarte">
 $date = new Date ();
 $date->getDateNow();
 
-$members = new Backlog();
+$members = new StoriesAndMembers();
     echo $members -> displayMembers("Antoine", "Boris", "Ivann");
     echo $members -> displayStories(1, 16);
 
@@ -31,37 +31,40 @@ $members = new Backlog();
     echo '</div>
 	</div>';
 
-// --- STORY 2 --- //
+    // --- STORY 2 --- //
+    echo '<div class="espaceCarte">
+                <div class="titreStory"><p>Story 2</p></div>
+                <div class="carte">';
+
+    echo '<form method="post">';
+
+    $myFormStory2 = new Form();
+    $myFormStory2 -> input("Entrez un chiffre");
+    $myFormStory2 -> button("submit", "Soumettre la réponse");
+
+    if(sizeof($_POST)>0) {
+        $nbr = new Form($_POST['Chiffre']);
+    }
+
+    $myCalc = new Calc();
+    $myCalc -> displayNbPremiers($myCalc);
+    echo '</form>';
+
+
+    echo '</div>
+            </div>';
+
+
     //----------------------Story 4------------------------//
     echo '<div class="espaceCarte">
             <div class="titreStory"><p>Story 4</p></div>
             <div class="carte">';
-    <form action = "" method= "post">
-    $formDate = new Formulaire();
+    echo '<form action = "" method= "post">';
+    $formDate = new Form();
     $formDate->getInputTypeText('age');
     $formDate->displayButton();
 
-echo '<div class="espaceCarte">
-                <div class="titreStory"><p>Story 1</p></div>
-                <div class="carte">';
 
-echo '<form method="post">';
-
-$myForm = new Form();
-$myForm -> input("Entrez un chiffre");
-$myForm -> button("submit", "Soumettre la réponse");
-
-if(sizeof($_POST)>0) {
-    $nbr = new Form($_POST['Chiffre']);
-}
-
-$myCalc = new Calc();
-$myCalc -> displayNbPremiers($myCalc);
-echo '</form>';
-
-
-echo '</div>
-        </div>';
 
     echo '</div>
 	</div>';
