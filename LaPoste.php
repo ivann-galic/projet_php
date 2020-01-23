@@ -39,6 +39,19 @@ require "php/PostPage.php"
                     $myForm = new Form();
                     $myForm -> button("submit", "Enregistrer ces options d'envoi");
 
+                    echo'<!-- DEBUT DU SCRIPT -->
+                    <script type="text/javascript">
+                    function printWindow()
+                    {
+                    bV = parseInt(navigator.appVersion);
+                    if (bV >= 4) window.print();
+                    }
+                    // -->
+                    </script>
+                    <!-- FIN DU SCRIPT -->';
+
+                    echo '<input type="button" value="Imprimer" onClick="javascript:printWindow();">';
+
                     if(sizeof($_POST)>0) {
                         $myPost = new PostPage();
                         $myPost->menuSelected($_POST['Expéditeur'], $_POST['Destinataire']);
@@ -47,7 +60,7 @@ require "php/PostPage.php"
         </div>
         <div class="colonne2">
 
-            <div class="letterTemplate">
+            <div id="#divAImprimer" class="letterTemplate">
 
                 <?php
                 if(sizeof($_POST)>0) {

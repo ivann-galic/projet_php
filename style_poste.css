@@ -3,7 +3,17 @@
 	src: url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap');
 	font-family: 'Montserrat', sans-serif;
 	src: url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
 }
+
+/*@media print {
+	body {
+		display:none;
+	}
+	#divimprimer {
+		display: block;
+	}
+}*/
 
 /* ---------- BODY ---------- */
 
@@ -268,10 +278,11 @@ footer {
 	text-align: center;
 }
 
+/* LA POSTE */
+
 #ancre15 {
 	margin-top: 10%;
 }
-
 
 .colonne1 {
 	padding-left: 90px;
