@@ -1,7 +1,14 @@
 <?php
+
+/** Class utilisataire pour réaliser des calculs
+ * Class Calc
+ */
 Class Calc
 {
 
+    /**Cette fo,ction prend un entier et retourne ses nombres premiers
+     * @param $n de type int
+     */
     function displayPrimeNumbers($n){
 
         $negative = false;
@@ -13,7 +20,7 @@ Class Calc
         for($i=2;$i<=$n;$i++){
 
             $nbDiv = 0;
-            // Counts the number of divisors
+            // Compte le nombre de diviseurs
             for($j=1;$j<=$i;$j++){
                 if($i%$j==0){
                     $nbDiv++;
@@ -32,6 +39,10 @@ Class Calc
         }
     }
 
+    /**
+     * Cette fonction retrouve le plus petit de trois nombres passés en paramétre
+     * @return mixed
+     */
     function smallerNumber($number1, $number2, $number3) {
 
         if ($number1 <=  $number2){
@@ -54,6 +65,11 @@ Class Calc
 
     }
 
+    /**
+     * Cette fonction retourne le factoriel du paramètre
+     * @param $number
+     * @return float|int
+     */
     function factorial($number)
     {
 
@@ -65,6 +81,10 @@ Class Calc
         return $number;
     }
 
+    /**Cette fonction transforme un nombre en binaire
+     * @param $number
+     * @return string
+     */
     function numberToBinary($number) {
 
         $remains = array();

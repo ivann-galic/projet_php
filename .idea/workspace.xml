@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ec4c3247-6af9-407d-82b5-fbc84ab56cde" name="Default Changelist" comment="" />
+    <list default="true" id="ec4c3247-6af9-407d-82b5-fbc84ab56cde" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/projet_php.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/FirstName.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/Calc.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/Calc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/Date.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/Date.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/Form.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/Form.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/Person.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/Person.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/StoriesAndMembers.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/StoriesAndMembers.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,7 +25,20 @@
       <executable />
     </execution>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1Wnvlx8NCbLzlEMzd90Qy3e2KtV" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
       <list>
@@ -29,21 +55,41 @@
     <configuration />
   </component>
   <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ec4c3247-6af9-407d-82b5-fbc84ab56cde" name="Default Changelist" comment="" />
+      <created>1579798327626</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1579798327626</updated>
+      <workItem from="1579798331254" duration="443000" />
+      <workItem from="1579808898869" duration="9203000" />
+    </task>
     <servers />
   </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="533" y="173" key="#com.intellij.ide.util.MemberChooser" timestamp="1579785220960">
+    <state x="533" y="173" key="#com.intellij.ide.util.MemberChooser" timestamp="1579820978883">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="533" y="173" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1579785220960" />
-    <state x="465" y="273" key="NewPhpClassDialog" timestamp="1579784860082">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="533" y="173" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1579820978883" />
+    <state x="556" y="192" key="#com.intellij.ide.util.MemberChooser/37.23.1403.877@37.23.1403.877" timestamp="1579820161139" />
+    <state x="489" y="289" key="NewPhpClassDialog" timestamp="1579814693959">
+      <screen x="36" y="23" width="1404" height="877" />
     </state>
     <state x="465" y="273" key="NewPhpClassDialog/0.0.1440.900@0.0.1440.900" timestamp="1579784860082" />
+    <state x="489" y="289" key="NewPhpClassDialog/36.23.1404.877@36.23.1404.877" timestamp="1579814693959" />
+    <state x="492" y="289" key="NewPhpClassDialog/40.23.1400.877@40.23.1400.877" timestamp="1579808925744" />
     <state x="541" y="380" key="NewPhpFileDialog" timestamp="1579775680274">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="541" y="380" key="NewPhpFileDialog/0.0.1440.900@0.0.1440.900" timestamp="1579775680274" />
+    <state x="418" y="294" key="com.intellij.ide.util.TipDialog" timestamp="1579808899176">
+      <screen x="40" y="23" width="1400" height="877" />
+    </state>
+    <state x="418" y="294" key="com.intellij.ide.util.TipDialog/40.23.1400.877@40.23.1400.877" timestamp="1579808899176" />
+    <state x="420" y="294" key="com.intellij.ide.util.TipDialog/43.23.1397.877@43.23.1397.877" timestamp="1579798332286" />
     <state x="-1280" y="186" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1579787813551">
       <screen x="-1877" y="23" width="1877" height="1057" />
     </state>

@@ -5,6 +5,7 @@
     require "php/Form.php";
     require "php/Calc.php";
     require "php/ConvertToRoman.php";
+    require "php/FirstName.php";
 ?>
 
 <!--    --- STORY 1 ----->
@@ -209,12 +210,15 @@
             echo '<p>Entrez une liste de prénoms séparés par des virgules :</p>';
 
             $myFormStory11 = new Form();
-            $myFormStory11-> input("prenoms:", "text");
+            $myFormStory11-> input('prenoms:', "text");
             $inputNumber11 = ($_POST['prenoms:']);
             $myFormStory7Button = new Form();
             $myFormStory7Button -> button("submit", "Soumettre la liste");
 
             if(sizeof($_POST)>0) {
+                    echo "test" . $_POST['prenoms:'];
+                    $splitPrenom = new FirstName();
+                    $splitPrenom->firstNameSplit($_POST['prenoms:']);
 
 
 

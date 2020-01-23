@@ -1,4 +1,8 @@
 <?php
+
+/**
+ * Class Person sert à générer des utilisateurs, utilisés pour entrer des données dans la base de donnée prévue à la story 12
+ */
 class Person {
 private $name;
 private $firstname;

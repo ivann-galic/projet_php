@@ -1,5 +1,8 @@
 <?php
 
+/** Cette classe traite de la story 1, elle permet d'avoir un point de vue global sur l'avancée du projet
+ * Class StoriesAndMembers
+ */
 Class StoriesAndMembers
 {
 
