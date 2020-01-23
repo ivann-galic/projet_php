@@ -9,8 +9,7 @@
 
 body {
 	margin: 0;
-	background-image: url("imgs/1.png"), url("imgs/concrete-texture.png");
-	background-repeat: no-repeat, repeat;
+	background-color: whitesmoke;
 	font-family: "Roboto", sans-serif;
 }
 
@@ -359,4 +358,26 @@ footer {
 #cartePoste {
 	background-color: #fac929;
 }
+
+#titrePoste {
+	background-color: #fac929;
+	margin-top: 0;
+}
+
+.imgPoste {
+	text-align: center;
+	margin-top: 10px;
+}
+
+.imgPoste img {
+	height: 30%;
+	width: 30%;
+}
+
+#ancre15 {
+	margin-top: 15px;
+}
+
+
+
 

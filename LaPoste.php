@@ -1,14 +1,15 @@
 <?php
-include "php/header.php";
+include "php/header_poste.php";
 include "php/footer_contact.php";
 require "php/Form.php";
 require "php/PostPage.php"
 ?>
 
 <!--    --- STORY 15/16 ----->
+<div class="imgPoste"><img src="imgs/la_poste.png"></div>
 <div id="ancre15" class="espaceCarte">
-    <div class="titreStory"><p>Story 15/16</p></div>
-    <div class="carte">
+    <div id="titrePoste" class="titreStory"><p>Story 15/16</p></div>
+    <div id="cartePoste" class="carte">
         <div class="colonne1">
             <form method= "post">
                 <?php
