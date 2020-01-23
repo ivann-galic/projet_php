@@ -127,14 +127,12 @@ header {
 	text-align: center;
 }
 
-#photoBgmenu {
-	width: 35%;
-}
 
 .bgmenuPresentation {
+	margin-top: 50px;
 	font-family: "Roboto", sans-serif;
-	text-align: center;
 	font-size: 17px;
+	padding-left: 40px;
 }
 
 #nom {
@@ -144,7 +142,10 @@ header {
 }
 
 #dev {
+	margin-top: 50px;
 	line-height: 25px;
+	font-size: 25px;
+
 }
 .bgmenuPresentation p {
 	margin-bottom: 8px;
@@ -174,7 +175,7 @@ header {
 .bgmenuSectionLiens li {
 	font-size: 17px;
 	padding-left: 40px;
-	margin-top: 3px;
+	margin-top: 2px;
 }
 
 .bgmenuSectionLiens p {
@@ -195,32 +196,6 @@ header {
 
 .bgmenuSectionLiens a:hover{
 	color: #546e7a;
-}
-
-.btnTelecharger {
-	background-color: #546e7a;
-	min-width: 55%;
-	min-height: 44px;
-	text-align: center;
-	margin-left: 40px;
-	margin-top: 40px;
-	border-radius: 4px;
-}
-
-.btnTelecharger:hover {
-	background-color: #819ca9;
-}
-
-.btnTelecharger p {
-	display: inline-block;
-	margin: 0 2px;
-	font-family: "Roboto", sans-serif;
-	color: #fff;
-	font-size: 16px;
-}
-
-.btnTelecharger a{
-	text-decoration: none;
 }
 
 /* STORIES */
@@ -263,7 +238,11 @@ header {
 	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
 }
 
-#carteStory1 {
+.carteStory1 {
+	margin-top: 10%;
+}
+
+#carteStory12 {
 	margin-top: 10%;
 }
 
@@ -282,4 +261,12 @@ footer {
 .footerImg {
 	height: 40px;
 	margin: 5px 0;
+}
+
+#footerContact {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background-color: white;
+	text-align: center;
 }

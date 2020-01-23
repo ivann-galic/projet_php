@@ -1,15 +1,15 @@
 <?php
-include "header.php";
-include "footer.php";
-require "Request.php";
-require "Person.php";
-require "Form.php";
+include "php/header.php";
+include "php/footer_contact.php";
+require "php/Request.php";
+require "php/Person.php";
+require "php/Form.php";
 ?>
 
 <!----- STORY 12 ----->
 
 <div class="espaceCarte">
-        <div class="titreStory"><p>Story 12 </p></div>
+        <div id="carteStory12" class="titreStory"><p>Story 12 </p></div>
         <div class="carte">
             <form method="post">
                 <?php
@@ -38,3 +38,7 @@ require "Form.php";
 
         </div>
     </div>
+
+<?php
+
+?>

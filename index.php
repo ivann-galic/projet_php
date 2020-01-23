@@ -1,13 +1,13 @@
 <?php
-    include "header.php";
-    require "StoriesAndMembers.php";
-    require "Date.php";
-    require "Form.php";
-    require "Calc.php";
+    include "php/header.php";
+    require "php/StoriesAndMembers.php";
+    require "php/Date.php";
+    require "php/Form.php";
+    require "php/Calc.php";
 ?>
 
 <!--    --- STORY 1 ----->
-    <div id="carteStory1" class="espaceCarte">
+    <div id="ancre1" class="espaceCarte carteStory1">
         <div class="titreStory"><p>Story 1</p></div>
         <div class="carte">
 
@@ -31,7 +31,7 @@
     </div>
 
 <!--    --- STORY 3 ----->
-    <div class="espaceCarte">
+    <div id="ancre3" class="espaceCarte">
         <div class="titreStory"><p>Story 3</p></div>
         <div class="carte">
             <form method="post">
@@ -53,7 +53,7 @@
     </div>
 
 <!--    --- STORY 4 ----->
-    <div class="espaceCarte">
+    <div id="ancre4" class="espaceCarte">
         <div class="titreStory"><p>Story 4</p></div>
         <div class="carte">
             <form method= "post">
@@ -75,7 +75,7 @@
     </div>
 
 <!--    --- STORY 5 ----->
-<div class="espaceCarte">
+<div id="ancre5" class="espaceCarte">
     <div class="titreStory"><p>Story 5</p></div>
     <div class="carte">
         <form method= "post">
@@ -105,7 +105,7 @@
 </div>
 
 <!--    --- STORY 7 ----->
-<div class="espaceCarte">
+<div id="ancre7" class="espaceCarte">
     <div class="titreStory"><p>Story 7</p></div>
     <div class="carte">
         <form method= "post">
@@ -130,7 +130,7 @@
 </div>
 
 <!--    --- STORY 10 ----->
-<div class="espaceCarte">
+<div id="ancre10" class="espaceCarte">
     <div class="titreStory"><p>Story 10</p></div>
     <div class="carte">
         <form method= "post">
@@ -173,7 +173,7 @@
 </div>
 
 <!--    --- STORY 11 ----->
-<div class="espaceCarte">
+<div id="ancre11" class="espaceCarte">
     <div class="titreStory"><p>Story 11</p></div>
     <div class="carte">
         <form method= "post">
