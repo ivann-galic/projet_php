@@ -108,37 +108,28 @@
 <!----- STORY 6 ----->
 
 
-<div id ="ancre6 class="espaceCarte">
+<div id ="ancre6" class="espaceCarte">
     <div class="titreStory"><p>Story 6</p></div>
     <div class="carte">
         <form method="post">
-            <?php echo '<p>Donnez nous un chiffre entre 1 et 4000</p>';
+            <?php
+                echo '<p>Donnez nous un chiffre entre 1 et 4000</p>';
 
-            $formRom = new Form();
-            $formRom->input("Chiffre", "text");
-            $formRom->button("submit", "Soumettre la réponse");
+                $formRom = new Form();
+                $formRom->input("Chiffre", "text");
+                $formRom->button("submit", "Soumettre la réponse");
 
+                if(sizeof($_POST)>0) {
+                    $number = new ConvertToRoman();
+                    $number->convNumberToRoman($_POST["Chiffre"]);
 
-                    if(sizeof($_POST)>0) {
-                        $number = new ConvertToRoman();
-                        $number->convNumberToRoman($_POST["Chiffre"]);
-
-                        //$result5 = $minNb->smallerNumber($_POST['Premier:'], $_POST['Second:'], $_POST['Troisième:']);
-                    //echo "Le plus petit nombre est: $result5";
-                    }
-                    ?>
+                    //$result5 = $minNb->smallerNumber($_POST['Premier:'], $_POST['Second:'], $_POST['Troisième:']);
+                //echo "Le plus petit nombre est: $result5";
+                }
+            ?>
         </form>
     </div>
 </div>
-
-
-
-
-
-
-
-
-
 
 
 <!--    --- STORY 7 ----->
