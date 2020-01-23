@@ -4,6 +4,7 @@
     require "php/Date.php";
     require "php/Form.php";
     require "php/Calc.php";
+    require "php/ConvertToRoman.php";
 ?>
 
 <!--    --- STORY 1 ----->
@@ -104,6 +105,42 @@
     </div>
 </div>
 
+<!----- STORY 6 ----->
+
+
+<div id ="ancre6 class="espaceCarte">
+    <div class="titreStory"><p>Story 6</p></div>
+    <div class="carte">
+        <form method="post">
+            <?php echo '<p>Donnez nous un chiffre entre 1 et 4000</p>';
+
+            $formRom = new Form();
+            $formRom->input("Chiffre", "text");
+            $formRom->button("submit", "Soumettre la réponse");
+
+
+                    if(sizeof($_POST)>0) {
+                        $number = new ConvertToRoman();
+                        $number->convNumberToRoman($_POST["Chiffre"]);
+
+                        //$result5 = $minNb->smallerNumber($_POST['Premier:'], $_POST['Second:'], $_POST['Troisième:']);
+                    //echo "Le plus petit nombre est: $result5";
+                    }
+                    ?>
+        </form>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
 <!--    --- STORY 7 ----->
 <div id="ancre7" class="espaceCarte">
     <div class="titreStory"><p>Story 7</p></div>
@@ -163,7 +200,7 @@
             $myFormStory10bisButton = new Form();
             $myFormStory10bisButton -> button("submit", "Enregistrer la date de naissance");
             if(sizeof($_POST)>0) {
-                $enteredBirthDate = new Form;
+                $enteredBirthDate = new Form();
                 $enteredBirthDate -> verifyBirthDate($_POST['date:']);
             }
 
@@ -181,13 +218,15 @@
             echo '<p>Entrez une liste de prénoms séparés par des virgules :</p>';
 
             $myFormStory11 = new Form();
-            $myFormStory11-> input("prénoms:", "text");
-            $inputNumber11 = ($_POST['prénoms:']);
+            $myFormStory11-> input("prenoms:", "text");
+            $inputNumber11 = ($_POST['prenoms:']);
             $myFormStory7Button = new Form();
             $myFormStory7Button -> button("submit", "Soumettre la liste");
 
             if(sizeof($_POST)>0) {
-                $myValues11 = new Form($_POST['prénoms:']);
+
+
+
             }
 
             ?>
