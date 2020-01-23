@@ -42,10 +42,7 @@ echo '<!DOCTYPE html>
 
 		<nav class="navigation">
 
-			<div class="bgmenuPresentation">
-				<p id="nom">Boris CASSEL</p>
-				<p id="nom">Antoine NOUHAUD</p>
-				<p id="nom">Ivann GALIC</p>				
+			<div class="bgmenuPresentation">		
 				<p id="dev">Projet PHP <a href="https://github.com/ivann-galic/projet_php.git"><i class="fab fa-github"></i></a></p>
 
 				

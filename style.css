@@ -106,8 +106,8 @@ header {
 	left:0;
 	z-index: 1000;
 	background-color: whitesmoke;
-	min-width: 300px;
-	max-width: 300px;
+	min-width: 270px;
+	max-width: 270px;
 	height: 100%;
 	transition: transform .6s ease-in-out;
 	-webkit-transition: transform .6s ease-in-out;
@@ -129,7 +129,7 @@ header {
 
 
 .bgmenuPresentation {
-	margin-top: 50px;
+	margin-top: 40px;
 	font-family: "Roboto", sans-serif;
 	font-size: 17px;
 	padding-left: 40px;
@@ -142,7 +142,7 @@ header {
 }
 
 #dev {
-	margin-top: 50px;
+	margin-top: 30px;
 	line-height: 25px;
 	font-size: 25px;
 
@@ -164,7 +164,7 @@ header {
 }
 
 .bgmenuSectionLiens {
-	margin-top: 40px;
+	margin-top: 20px;
 }
 
 .bgmenuSectionLiens ul{
@@ -175,7 +175,6 @@ header {
 .bgmenuSectionLiens li {
 	font-size: 17px;
 	padding-left: 40px;
-	margin-top: 2px;
 }
 
 .bgmenuSectionLiens p {
