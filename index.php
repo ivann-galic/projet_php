@@ -233,51 +233,6 @@
         </form>
     </div>
 
-    <!--    --- STORY 14 ----->
-    <div id="ancre14" class="espaceCarte">
-        <div class="titreStory"><p>Story 14</p></div>
-        <div class="carte">
-
-            echo
-            '<p>Expéditeur :</p>
-            <select name="Expéditeur">
-
-                <option>CASSEL Boris </option>
-                <option>GALIC Ivann</option>
-                <option>NOUHAUD Antoine</option>
-            </select>
-
-            <p>Destinataire :</p>
-            <select name="Expéditeur">
-
-                <option>Coding Factory</option>
-                <option>Centre des Impôts</option>
-                <option>POUDLARD</option>
-            </select>
-
-            <p>Destinataire :</p>
-            <select name="Expéditeur">
-
-                <option>Coding Factory</option>
-                <option>Centre des Impôts</option>
-                <option>POUDLARD</option>
-            </select>
-
-            <p>Adresse :</p>
-            <select name="Expéditeur">
-
-                <option>8 Avenue de la Porte de Champerret, 75000 PARIS </option>
-                <option>13, rue des Taxes 75017 PARIS</option>
-                <option>5, terre des Quatre Maisons 00000 POUDLARD</option>
-            </select>'
-
-                <?php
-
-
-                ?>
-
-        </div>
-    </div>
 <?php
 include "footer.php";
 ?>

@@ -88,10 +88,7 @@ echo '<!DOCTYPE html>
 						<a class="lienAlgo" href="#ancre13">Story 13</a>
 					</li>
 					<li>
-						<a class="lienAlgo" href="#ancre14">Story 14</a>
-					</li>
-					<li>
-						<a class="lienAlgo" href="#ancre15">Story 15</a>
+						<a class="lienAlgo" href="LaPoste.php">Story 15</a>
 					</li>
 					<li>
 						<a class="lienAlgo" href="#ancre16">Story 16</a>

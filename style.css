@@ -270,6 +270,21 @@ footer {
 	text-align: center;
 }
 
-#ancre14 {
-	margin-top: 5%;
+#ancre15 {
+	margin-top: 10%;
 }
+
+.colonne1 {
+	float: left;
+	width: 50%;
+	height: 100%;
+}
+
+.colonne2 {
+	padding-top: 25px;
+	float: right;
+	width: 40%;
+	height: 100%;
+	text-align: left;
+}
+
