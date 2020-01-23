@@ -9,7 +9,7 @@ class Date {
         try{
             $dateNow = time();
             $result = $dateNow - $dateUser;
-            echo "L'evenement a eu lieu le ". date('d/m/Y', $result);
+            echo "L'evenement a eu lieu le ". date('d/F/Y', $result);
         }catch(Exception $e){
         echo "Erreur ! Entrez un nombre de secondes";
     }

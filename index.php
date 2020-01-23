@@ -1,6 +1,5 @@
 <?php
     include "header.php";
-    include "footer.php";
     require "StoriesAndMembers.php";
     require "Date.php";
     require "Form.php";
@@ -37,15 +36,16 @@
         <div class="carte">
             <form method="post">
                 <?php
+                echo 'Entrez 1 chiffre pour générer les nombres premiers qui le précèdent :<br><br>';
                 $myFormStory2 = new Form();
                 $myFormStory2 -> input("chiffre", "number");
                 $myFormStory2 -> button("submit", "Soumettre la réponse");
+
                 if(sizeof($_POST)>0) {
                     $nbr = ($_POST['chiffre']);
-                    // echo $nbr;
+                    echo "Les nombres premiers entre 0 et ".$nbr." sont : ";
                     $myCalc3 = new Calc();
                     $myCalc3 -> displayPrimeNumbers($nbr);
-
                 }
                 ?>
             </form>
@@ -58,6 +58,8 @@
         <div class="carte">
             <form method= "post">
                 <?php
+                echo 'Entrez 1 nombre de secondes afin de connaître la date de l\'évènement antérieur :<br><br>';
+
                 $formDate = new Form();
                 $formDate->input('secondes', "text");
                 $formDate->button("submit", "Soumettre la réponse");
@@ -78,28 +80,25 @@
     <div class="carte">
         <form method= "post">
             <?php
-            echo 'Entrez 3 chiffres :<br>';
+                echo 'Entrez 3 chiffres :<br><br>';
 
-            $myFormStory5FirstNumber = new Form();
-            $myFormStory5FirstNumber -> input("Premier:", "number");
-            $minNb1 = ($_POST['Premier:']);
+                $myFormStory5FirstNumber = new Form();
+                $myFormStory5FirstNumber -> input("Premier:", "number");
 
-            $myFormStory5FSecondNumber = new Form();
-            $myFormStory5FSecondNumber -> input("Second:", "number");
-            $minNb2 = ($_POST['Second:']);
+                $myFormStory5FSecondNumber = new Form();
+                $myFormStory5FSecondNumber -> input("Second:", "number");
 
-            $myFormStory5FTroisiemeNumber = new Form();
-            $myFormStory5FTroisiemeNumber -> input("Troisième:", "number");
-            $minNb3 = ($_POST['Troisième:']);
+                $myFormStory5FTroisiemeNumber = new Form();
+                $myFormStory5FTroisiemeNumber -> input("Troisième:", "number");
 
-            $myFormStory5Button = new Form();
-            $myFormStory5Button -> button("submit", "Soumettre la réponse");
+                $myFormStory5Button = new Form();
+                $myFormStory5Button -> button("submit", "Soumettre la réponse");
 
-
-            $minNb = new Calc();
-            $result5 = $minNb -> smallerNumber($minNb1, $minNb2, $minNb3);
-
-            echo "Le plus petit nombre est: $result5"
+                if(sizeof($_POST)>0) {
+                    $minNb = new Calc();
+                    $result5 = $minNb->smallerNumber($_POST['Premier:'], $_POST['Second:'], $_POST['Troisième:']);
+                    echo "Le plus petit nombre est: $result5";
+            }
             ?>
         </form>
     </div>
@@ -111,7 +110,7 @@
     <div class="carte">
         <form method= "post">
             <?php
-            echo 'Entrez 1 chiffre pour découvrir son résultat factoriel :<br>';
+            echo 'Entrez 1 chiffre pour découvrir son résultat factoriel :<br><br>';
 
             $myFormStory7 = new Form();
             $myFormStory7-> input("chiffre:", "number");
@@ -119,37 +118,87 @@
             $myFormStory7Button = new Form();
             $myFormStory7Button -> button("submit", "Soumettre la réponse");
 
-            $toFactorize = new Calc();
-            $result7 = $toFactorize -> factorial($inputNumber7);
+            if(sizeof($_POST)>0) {
+                $toFactorize = new Calc();
+                $result7 = $toFactorize -> factorial($inputNumber7);
+                echo "Le résultat factiel est : $result7";
+            }
 
-            echo "Le résultat factiel est : $result7"
             ?>
         </form>
     </div>
 </div>
 
-<!--    --- STORY 9 ----->
+<!--    --- STORY 10 ----->
 <div class="espaceCarte">
-    <div class="titreStory"><p>Story 9</p></div>
+    <div class="titreStory"><p>Story 10</p></div>
     <div class="carte">
         <form method= "post">
             <?php
-            echo 'Entrez 1 chiffre pour le convertir en binaire :<br>';
+            echo 'Entrer une adresse mail :<br><br>';
 
-            $myFormStory9 = new Form();
-            $myFormStory9-> input("chiffre:", "number");
-            $inputNumber9 = ($_POST['chiffre:']);
-            $myFormStory9Button = new Form();
-            $myFormStory9Button -> button("submit", "Soumettre la réponse");
+            $myFormStory10 = new Form();
+            $myFormStory10-> input("mail:", "text");
 
-            $toBinary = new Calc();
-            $result9 = $toBinary -> numberToBinary($inputNumber9);
+            $myFormStory10Button = new Form();
+            $myFormStory10Button -> button("submit", "Enregistrer le mail");
 
-            echo "La conversion en binaire est : $result9"
+            if(sizeof($_POST)>0) {
+            $enteredNail = new Form;
+            $enteredNail -> verifyMail($_POST['mail:']);
+            }
+
+            ?>
+        </form>
+    </div>
+
+    <div id="double" class="carte">
+        <form method= "post">
+            <?php
+
+            echo 'Entrer une date de naissance :<br><br>';
+            $myFormStory10bis = new Form();
+            $myFormStory10bis-> input("date:", "text");
+
+            $myFormStory10bisButton = new Form();
+            $myFormStory10bisButton -> button("submit", "Enregistrer la date de naissance");
+            if(sizeof($_POST)>0) {
+                $enteredBirthDate = new Form;
+                $enteredBirthDate -> verifyBirthDate($_POST['date:']);
+            }
+
             ?>
         </form>
     </div>
 </div>
+
+<!--    --- STORY 11 ----->
+<div class="espaceCarte">
+    <div class="titreStory"><p>Story 11</p></div>
+    <div class="carte">
+        <form method= "post">
+            <?php
+            echo 'Entrez une liste de prénoms séparés par des virgules :<br><br>';
+
+            $myFormStory11 = new Form();
+            $myFormStory11-> input("prénoms:", "text");
+            $inputNumber11 = ($_POST['prénoms:']);
+            $myFormStory7Button = new Form();
+            $myFormStory7Button -> button("submit", "Soumettre la liste");
+
+            if(sizeof($_POST)>0) {
+                $myValues11 = new Form($_POST['prénoms:']);
+            }
+
+            ?>
+        </form>
+    </div>
+
+
+<?php
+include "footer.php";
+?>
+
 
 
 
