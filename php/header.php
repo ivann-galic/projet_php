@@ -31,7 +31,7 @@ echo '<!DOCTYPE html>
 						<a class="lienBarreMenu" id="menuAglo" href="index.php">Algo</a>
 					</li>
 					<li>
-						<a class="lienBarreMenu" id="menuLaPoste" href="La_Poste.php">La Poste</a>
+						<a class="lienBarreMenu" id="menuLaPoste" href="LaPoste.php">La Poste</a>
 					</li>
                     <li>
 						<a class="lienBarreMenu" id="menuLaPoste" href="contact.php">Contact</a>

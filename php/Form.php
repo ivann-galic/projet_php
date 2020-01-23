@@ -29,12 +29,6 @@ Class Form
         }
     }
 
-    public function azSecondLetter($list) {
-
-
-
-    }
-
 
 }
 ?>

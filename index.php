@@ -36,7 +36,7 @@
         <div class="carte">
             <form method="post">
                 <?php
-                echo 'Entrez 1 chiffre pour générer les nombres premiers qui le précèdent :<br><br>';
+                echo '<p>Entrez 1 chiffre pour générer les nombres premiers qui le précèdent :</p>';
                 $myFormStory2 = new Form();
                 $myFormStory2 -> input("chiffre", "number");
                 $myFormStory2 -> button("submit", "Soumettre la réponse");
@@ -58,7 +58,7 @@
         <div class="carte">
             <form method= "post">
                 <?php
-                echo 'Entrez 1 nombre de secondes afin de connaître la date de l\'évènement antérieur :<br><br>';
+                echo '<p>Entrez 1 nombre de secondes afin de connaître la date de l\'évènement antérieur :</p>';
 
                 $formDate = new Form();
                 $formDate->input('secondes', "text");
@@ -80,7 +80,7 @@
     <div class="carte">
         <form method= "post">
             <?php
-                echo 'Entrez 3 chiffres :<br><br>';
+                echo '<p>Entrez 3 chiffres :</p>';
 
                 $myFormStory5FirstNumber = new Form();
                 $myFormStory5FirstNumber -> input("Premier:", "number");
@@ -110,7 +110,7 @@
     <div class="carte">
         <form method= "post">
             <?php
-            echo 'Entrez 1 chiffre pour découvrir son résultat factoriel :<br><br>';
+            echo '<p>Entrez 1 chiffre pour découvrir son résultat factoriel :</p>';
 
             $myFormStory7 = new Form();
             $myFormStory7-> input("chiffre:", "number");
@@ -135,7 +135,7 @@
     <div class="carte">
         <form method= "post">
             <?php
-            echo 'Entrer une adresse mail :<br><br>';
+            echo '<p>Entrer une adresse mail :</p>';
 
             $myFormStory10 = new Form();
             $myFormStory10-> input("mail:", "text");
@@ -156,7 +156,7 @@
         <form method= "post">
             <?php
 
-            echo 'Entrer une date de naissance :<br><br>';
+            echo '<p>Entrer une date de naissance :</p>';
             $myFormStory10bis = new Form();
             $myFormStory10bis-> input("date:", "text");
 
@@ -178,7 +178,7 @@
     <div class="carte">
         <form method= "post">
             <?php
-            echo 'Entrez une liste de prénoms séparés par des virgules :<br><br>';
+            echo '<p>Entrez une liste de prénoms séparés par des virgules :</p>';
 
             $myFormStory11 = new Form();
             $myFormStory11-> input("prénoms:", "text");
@@ -194,7 +194,51 @@
         </form>
     </div>
 
+    <!--    --- STORY 14 ----->
+    <div id="ancre14" class="espaceCarte">
+        <div class="titreStory"><p>Story 14</p></div>
+        <div class="carte">
 
+            echo
+            '<p>Expéditeur :</p>
+            <select name="Expéditeur">
+
+                <option>CASSEL Boris </option>
+                <option>GALIC Ivann</option>
+                <option>NOUHAUD Antoine</option>
+            </select>
+
+            <p>Destinataire :</p>
+            <select name="Expéditeur">
+
+                <option>Coding Factory</option>
+                <option>Centre des Impôts</option>
+                <option>POUDLARD</option>
+            </select>
+
+            <p>Destinataire :</p>
+            <select name="Expéditeur">
+
+                <option>Coding Factory</option>
+                <option>Centre des Impôts</option>
+                <option>POUDLARD</option>
+            </select>
+
+            <p>Adresse :</p>
+            <select name="Expéditeur">
+
+                <option>8 Avenue de la Porte de Champerret, 75000 PARIS </option>
+                <option>13, rue des Taxes 75017 PARIS</option>
+                <option>5, terre des Quatre Maisons 00000 POUDLARD</option>
+            </select>'
+
+                <?php
+
+
+                ?>
+
+        </div>
+    </div>
 <?php
 include "footer.php";
 ?>
