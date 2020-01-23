@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ec4c3247-6af9-407d-82b5-fbc84ab56cde" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="533" y="173" key="#com.intellij.ide.util.MemberChooser" timestamp="1579785220960">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="533" y="173" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1579785220960" />
+    <state x="465" y="273" key="NewPhpClassDialog" timestamp="1579784860082">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="465" y="273" key="NewPhpClassDialog/0.0.1440.900@0.0.1440.900" timestamp="1579784860082" />
+    <state x="541" y="380" key="NewPhpFileDialog" timestamp="1579775680274">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="541" y="380" key="NewPhpFileDialog/0.0.1440.900@0.0.1440.900" timestamp="1579775680274" />
+    <state x="-1280" y="186" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1579787813551">
+      <screen x="-1877" y="23" width="1877" height="1057" />
+    </state>
+    <state x="-1280" y="186" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.23.1440.877/-1877.23.1877.1057@-1877.23.1877.1057" timestamp="1579787813551" />
+  </component>
+</project>
