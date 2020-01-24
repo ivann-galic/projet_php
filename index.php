@@ -16,7 +16,7 @@
             <?php
             $members = new StoriesAndMembers();
             echo $members -> displayMembers("Antoine", "Boris", "Ivann");
-            echo $members -> displayStories(1, 16);
+            echo $members -> displayStories(13, 16);
             ?>
 
             <div class="storiesDone">
