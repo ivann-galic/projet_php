@@ -223,16 +223,16 @@ header {
 	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
 	margin-bottom: 2%;
 	vertical-align: center;
-
 }
 
 .titreStory p {
 	text-align: center;
 	font-family: "Roboto Medium", sans-serif;
-	font-size: 19px;
-	letter-spacing: 1px;
+	font-size: 21px;
 	line-height: 42px;
 	margin: 0;
+	letter-spacing: 2px;
+	text-transform: uppercase;
 }
 
 .carte {
