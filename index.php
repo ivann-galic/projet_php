@@ -21,10 +21,10 @@
             $stories = new StoriesAndMembers();
             $listFinishedStories = array();
             $listPendingStories = array();
-            array_push($listFinishedStories, "story 1", "story 2", "story 3", "story 4", "story 5", "story 6", "story 7", "story 10", "story 12", "story 15", "story 16");
+            array_push($listFinishedStories, "story 1", "story 2", "story 3", "story 4", "story 5", "story 6", "story 7", "story 9", "story 10", "story 12", "story 15", "story 16");
             $stories -> displayFinishedStories($listFinishedStories);
 
-            array_push($listPendingStories,"story 8", "story 9", "story 11", "story 13", "story 14");
+            array_push($listPendingStories,"story 8", "story 11", "story 13", "story 14");
             $stories -> displayPendingStories($listPendingStories);
             ?>
 
@@ -152,6 +152,29 @@
                 echo "Le résultat factiel est : $result7";
             }
 
+            ?>
+        </form>
+    </div>
+</div>
+
+<!--    --- STORY 9 ----->
+<div class="espaceCarte">
+    <div class="titreStory"><p>Story 9</p></div>
+    <div class="carte">
+        <form method= "post">
+            <?php
+            echo 'Entrez 1 chiffre pour le convertir en binaire :<br>';
+
+            $myFormStory9 = new Form();
+            $myFormStory9-> input("chiffre:", "number");
+            $inputNumber9 = ($_POST['chiffre:']);
+            $myFormStory9Button = new Form();
+            $myFormStory9Button -> button("submit", "Soumettre la réponse");
+
+            $toBinary = new Calc();
+            $result9 = $toBinary -> numberToBinary($inputNumber9);
+
+            echo "La conversion en binaire est : $result9"
             ?>
         </form>
     </div>
