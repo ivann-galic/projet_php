@@ -279,3 +279,28 @@ footer {
 	margin-top: 10%;
 }
 
+.storiesDone {
+	margin-top: 10px;
+	width: 50%;
+	float: left;
+	display: inline-block;
+
+}
+
+.storiesWaiting {
+	margin-top: 10px;
+	width: 50%;
+	float: right;
+	display: inline-block;
+}
+
+.textStoriesDone {
+	color: #20709b;
+	font-weight: bold;
+}
+
+.textStoriesWaiting {
+	color: #ba8683;
+	font-weight: bold;
+}
+

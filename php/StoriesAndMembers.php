@@ -15,14 +15,14 @@ Class StoriesAndMembers
     }
 
     public function displayFinishedStories($array){
-        echo '<p> Stories terminées : </p>';
+        echo '<p class="textStoriesDone"> Stories terminées : </p>';
         foreach ($array as $value) {
             echo '<p> - '.$value.' </p>';
         }
     }
 
     public function displayPendingStories($array){
-        echo '<p> Stories en attente : </p>';
+        echo '<p class="textStoriesWaiting"> Stories en attente : </p>';
         foreach ($array as $value) {
             echo '<p> - '.$value.' </p>';
         }
