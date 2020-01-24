@@ -82,7 +82,7 @@ echo '<!DOCTYPE html>
 						<a class="lienAlgo" href="#ancre11">Story 11</a>
 					</li>
 					<li>
-						<a class="lienAlgo" href="#ancre12">Story 12</a>
+						<a class="lienAlgo" href="contact.php">Story 12</a>
 					</li>
 					<li>
 						<a class="lienAlgo" href="#ancre13">Story 13</a>

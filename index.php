@@ -44,7 +44,7 @@
 
                 if(sizeof($_POST)>0) {
                     $nbr = ($_POST['chiffre']);
-                    echo "Les nombres premiers entre 0 et ".$nbr." sont : ";
+                    echo "<p>Les nombres premiers entre 0 et ".$nbr." sont :</p>";
                     $myCalc3 = new Calc();
                     $myCalc3 -> displayPrimeNumbers($nbr);
                 }
@@ -98,7 +98,7 @@
                 if(sizeof($_POST)>0) {
                     $minNb = new Calc();
                     $result5 = $minNb->smallerNumber($_POST['Premier:'], $_POST['Second:'], $_POST['Troisième:']);
-                    echo "Le plus petit nombre est: $result5";
+                    echo "<p>Le plus petit nombre est: $result5</p>";
             }
             ?>
         </form>
@@ -149,7 +149,7 @@
             if(sizeof($_POST)>0) {
                 $toFactorize = new Calc();
                 $result7 = $toFactorize -> factorial($inputNumber7);
-                echo "Le résultat factiel est : $result7";
+                echo "<p>Le résultat factiel est : $result7</p>";
             }
 
             ?>
@@ -158,12 +158,12 @@
 </div>
 
 <!--    --- STORY 9 ----->
-<div class="espaceCarte">
+<div id="ancre9" class="espaceCarte">
     <div class="titreStory"><p>Story 9</p></div>
     <div class="carte">
         <form method= "post">
             <?php
-            echo 'Entrez 1 chiffre pour le convertir en binaire :<br>';
+            echo '<p>Entrez 1 chiffre pour le convertir en binaire :</p>';
 
             $myFormStory9 = new Form();
             $myFormStory9-> input("chiffre:", "number");
@@ -171,10 +171,11 @@
             $myFormStory9Button = new Form();
             $myFormStory9Button -> button("submit", "Soumettre la réponse");
 
-            $toBinary = new Calc();
-            $result9 = $toBinary -> numberToBinary($inputNumber9);
-
-            echo "La conversion en binaire est : $result9"
+            if(sizeof($_POST)>0) {
+                $toBinary = new Calc();
+                $result9 = $toBinary -> numberToBinary($inputNumber9);
+                echo "<p> La conversion en binaire est : $result9</p>";
+            }
             ?>
         </form>
     </div>

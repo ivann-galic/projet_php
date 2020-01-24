@@ -9,8 +9,9 @@
 
 body {
 	margin: 0;
-	background-image: url("imgs/1.png"), url("imgs/concrete-texture.png");
+	background-image: url("imgs/4.png"), url("imgs/concrete-texture.png");
 	background-repeat: no-repeat, repeat;
+	background-position: top;
 	font-family: "Roboto", sans-serif;
 }
 
@@ -237,11 +238,15 @@ header {
 }
 
 .carteStory1 {
-	margin-top: 10%;
+	margin-top: 20%;
 }
 
 #carteStory12 {
-	margin-top: 10%;
+	margin-top: 7%;
+}
+
+#ancre12 {
+	margin-top: 190px;
 }
 
 #double {
@@ -271,92 +276,5 @@ footer {
 
 #ancre15 {
 	margin-top: 10%;
-}
-
-
-.colonne1 {
-	padding-left: 90px;
-	float: left;
-	width: 20%;
-	height: 100%;
-	text-align: left;
-}
-
-.colonne2 {
-	float: right;
-	width: 70%;
-	height: 100%;
-}
-
-.letterTemplate {
-	position: relative;
-	height: 300px;
-	width: 600px;
-	border: 1px solid black;
-	margin-left: auto;
-	margin-right: auto;
-	background-color: white;
-}
-
-.confidentiel {
-	height: 10%;
-	width: 20%;
-	position: absolute;
-	top: 3%;
-	left: 6%;
-}
-
-.confidentiel p {
-	font-weight: bold;
-	letter-spacing: 1px;
-	color: #ef5350;
-}
-
-.timbre {
-	height: 23%;
-	width: 10%;
-	position: absolute;
-	top: 7%;
-	left: 85%;
-}
-
-#timbreRouge {
-	background-color: #ef5350;
-}
-
-#timbreVert {
-	background-color: #81c784;
-}
-
-.espaceExp {
-	position: relative;
-	height: 25%;
-	width: 40%;
-	border: 1px dotted lightslategray;
-	top: 37%;
-	left: 48%;
-	padding-left: 2%;
-}
-
-.espaceExp p {
-	text-align: left;
-}
-
-.espaceDest {
-	position: relative;
-	height: 25%;
-	width: 40%;
-	border: 1px dotted lightslategray;
-	top: 42%;
-	left: 48%;
-	padding-left: 2%;
-}
-
-.espaceDest p {
-	text-align: left;
-}
-
-#cartePoste {
-	background-color: #fac929;
 }
 

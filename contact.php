@@ -8,7 +8,7 @@ require "php/Form.php";
 
 <!----- STORY 12 ----->
 
-<div class="espaceCarte">
+<div id="ancre12" class="espaceCarte">
         <div id="carteStory12" class="titreStory"><p>Story 12 </p></div>
         <div class="carte">
             <form method="post">
