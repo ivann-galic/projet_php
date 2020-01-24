@@ -21,10 +21,11 @@
             $stories = new StoriesAndMembers();
             $listFinishedStories = array();
             $listPendingStories = array();
-            array_push($listFinishedStories, "story 1", "story 2", "story 3", "story 4", "story 5", "story 6", "story 7", "story 9", "story 10", "story 12", "story 15", "story 16");
+            array_push($listFinishedStories, "story 1", "story 2", "story 3", "story 4", "story 5", "story 6", "story 7", "story 8",
+                "story 9", "story 10", "story 12", "story 15", "story 16");
             $stories -> displayFinishedStories($listFinishedStories);
 
-            array_push($listPendingStories,"story 8", "story 11", "story 13", "story 14");
+            array_push($listPendingStories,"story 11", "story 13", "story 14");
             $stories -> displayPendingStories($listPendingStories);
             ?>
 
