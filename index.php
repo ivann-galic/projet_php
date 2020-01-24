@@ -157,6 +157,30 @@
     </div>
 </div>
 
+<!--    --- STORY 8 ----->
+<div id="ancre8" class="espaceCarte">
+    <div class="titreStory"><p>Story 8</p></div>
+    <div class="carte">
+        <form method= "post">
+            <?php
+            echo '<p>Entrez 1 chiffre pour le convertir en hexadecimal :</p>';
+
+            $myFormStory8 = new Form();
+            $myFormStory8-> input("chiffre:", "number");
+            $inputNumber8 = ($_POST['chiffre:']);
+            $myFormStory8Button = new Form();
+            $myFormStory8Button -> button("submit", "Soumettre la réponse");
+
+            if(sizeof($_POST)>0) {
+                $toHexa = new Calc();
+                $result8 = $toHexa -> numberToHexa($inputNumber8);
+                echo "<p> La conversion en hexa est : $result8</p>";
+            }
+            ?>
+        </form>
+    </div>
+</div>
+
 <!--    --- STORY 9 ----->
 <div id="ancre9" class="espaceCarte">
     <div class="titreStory"><p>Story 9</p></div>

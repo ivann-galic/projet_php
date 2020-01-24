@@ -101,6 +101,13 @@ Class Calc
 
         return $bin;
         }
+    function numberToHexa($number){
+        $number=dechex($number);
+        return $number;
+
+
+    }
+
 
 }
 ?>
